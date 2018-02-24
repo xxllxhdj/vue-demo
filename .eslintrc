@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "plugin:vue/essential",
+    "@vue/standard"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "rules": {
+    "indent": "off",
+    "space-before-function-paren": "off",
+    "semi": "off"
+  }
+}
