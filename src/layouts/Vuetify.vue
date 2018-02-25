@@ -31,12 +31,12 @@
         </v-toolbar>
         <v-content>
             <v-container fluid class="view-container">
-                <transition name="slide" mode="out-in">
+                <!-- <transition name="slide" mode="out-in">
                     <router-view></router-view>
-                </transition>
-                <!-- <v-fade-transition mode="out-in">
+                </transition> -->
+                <v-fade-transition mode="out-in">
                     <router-view></router-view>
-                </v-fade-transition> -->
+                </v-fade-transition>
                 <!-- <v-slide-y-transition mode="out-in">
                     <router-view></router-view>
                 </v-slide-y-transition> -->
@@ -50,7 +50,7 @@
 
 <script>
     export default {
-        name: 'default',
+        name: 'vuetify',
         data: () => ({
             drawer: true,
             items: [{
@@ -96,16 +96,32 @@
         padding: 0;
     }
 
-    .slide-enter-active, .slide-leave-active {
-        transition: all .3s ease;
-    }
-    .slide-enter, .slide-leave-to {
-        opacity: 0;
-    }
-    .slide-enter {
-        transform: translateX(-3rem);
-    }
-    .slide-leave-to {
-        transform: translateX(3rem);
-    }
+    // .slide-enter-active, .slide-leave-active {
+    //     transition: all .3s ease;
+    // }
+    // .slide-enter, .slide-leave-to {
+    //     opacity: 0;
+    // }
+    // .slide-enter {
+    //     transform: translateX(-3rem);
+    // }
+    // .slide-leave-to {
+    //     transform: translateX(3rem);
+    // }
+
+    // .slide-enter-active {
+    //     transition: all .5s cubic-bezier(0.36, 0.66, 0.04, 1);
+    // }
+    // .slide-enter, .slide-leave-to {
+    //     opacity: 0;
+    // }
+    // .slide-enter {
+    //     transform: translateX(-100%);
+    // }
+    // .slide-leave-active {
+    //     transition: all .2s cubic-bezier(0.4, 0.6, 0.2, 1);
+    // }
+    // .slide-leave-to {
+    //     transform: translateX(100%);
+    // }
 </style>

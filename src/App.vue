@@ -9,21 +9,21 @@
 </template>
 
 <script>
-    import Default from './layouts/Default';
     import Home from './layouts/Home';
+    import Vuetify from './layouts/Vuetify';
 
     export default {
         name: 'app',
         components: {
-            Default,
-            Home
+            Home,
+            Vuetify
         },
         computed: {
             component () {
                 if (this.$route.path === '/') {
                     return 'home';
                 }
-                return 'default';
+                return 'vuetify';
             }
         }
     }
