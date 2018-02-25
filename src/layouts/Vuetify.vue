@@ -58,19 +58,19 @@
                 title: 'Layout',
                 items: [{
                         title: 'Grid',
-                        href: '/layout/grid'
+                        href: '/vuetify/layout/grid'
                     },
                     {
                         title: 'Alignment',
-                        href: '/layout/alignment'
+                        href: '/vuetify/layout/alignment'
                     },
                     {
                         title: 'Display',
-                        href: '/layout/display'
+                        href: '/vuetify/layout/display'
                     },
                     {
                         title: 'Elevation',
-                        href: '/layout/elevation'
+                        href: '/vuetify/layout/elevation'
                     }
                 ]
             }]

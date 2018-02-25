@@ -7,7 +7,7 @@
         </p>
         <h3>Framework</h3>
         <div>
-            <router-link to="/layout/grid">Vuetify</router-link>
+            <router-link to="/vuetify/layout/grid">Vuetify</router-link>
         </div>
         <h3>Installed CLI Plugins</h3>
         <ul>
