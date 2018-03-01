@@ -29,6 +29,22 @@ const scrollBehavior = (to, from, savedPosition) => {
     }
 };
 
+const testRouter = [{
+    path: '/test/directive',
+    name: 'directive',
+    component: () => import(/* webpackChunkName: "test" */'./test/views/DirectiveView.vue')
+}];
+
+const vuetifyRouter = [{
+    path: '/vuetify/layout/grid',
+    name: 'grid',
+    component: () => import(/* webpackChunkName: "vuetify" */'./vuetify/views/GridView.vue')
+}, {
+    path: '/vuetify/layout/alignment',
+    name: 'alignment',
+    component: () => import(/* webpackChunkName: "vuetify" */'./vuetify/views/AlignmentView.vue')
+}];
+
 export default new Router({
     mode: 'history',
     scrollBehavior,
@@ -36,15 +52,7 @@ export default new Router({
         path: '/',
         name: 'home',
         component: HomeView
-    }, {
-        path: '/vuetify/layout/grid',
-        name: 'grid',
-        component: () => import(/* webpackChunkName: "vuetify" */'./vuetify/views/GridView.vue')
-    }, {
-        path: '/vuetify/layout/alignment',
-        name: 'alignment',
-        component: () => import(/* webpackChunkName: "vuetify" */'./vuetify/views/AlignmentView.vue')
-    }, {
+    }, ...testRouter, ...vuetifyRouter, {
         path: '*',
         redirect: '/'
     }]

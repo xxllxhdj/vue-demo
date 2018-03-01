@@ -10,18 +10,23 @@
 
 <script>
     import Home from './layouts/Home';
+    import Test from './layouts/Test';
     import Vuetify from './layouts/Vuetify';
 
     export default {
         name: 'app',
         components: {
             Home,
-            Vuetify
+            Vuetify,
+            Test
         },
         computed: {
             component () {
                 if (this.$route.path === '/') {
                     return 'home';
+                }
+                if (this.$route.path.startsWith('/test')) {
+                    return 'test';
                 }
                 return 'vuetify';
             }
