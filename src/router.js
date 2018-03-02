@@ -30,9 +30,13 @@ const scrollBehavior = (to, from, savedPosition) => {
 };
 
 const testRouter = [{
+    path: '/test/transition',
+    name: 'transition',
+    component: () => import(/* webpackChunkName: "test" */'./test/components/TestTransition.vue')
+}, {
     path: '/test/directive',
     name: 'directive',
-    component: () => import(/* webpackChunkName: "test" */'./test/views/DirectiveView.vue')
+    component: () => import(/* webpackChunkName: "test" */'./test/components/TestDirective.vue')
 }];
 
 const vuetifyRouter = [{

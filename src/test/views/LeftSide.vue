@@ -4,7 +4,8 @@
             <router-link to="/">Vue测试</router-link>
         </div>
         <div class="content">
-
+            <router-link to="/test/transition">过渡</router-link>
+            <router-link to="/test/directive">指令</router-link>
         </div>
     </div>
 </template>
@@ -46,5 +47,10 @@
 
     .content {
         flex: 1 1 auto;
+        padding: 10px;
+    }
+    .content > a {
+        font-size: 16px;
+        margin: 0 10px;
     }
 </style>
