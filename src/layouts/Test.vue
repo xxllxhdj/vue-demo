@@ -19,11 +19,18 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
     .test {
         display: flex;
         min-height: 100vh;
         max-width: 100%;
         position: relative;
+    }
+
+    
+    .test-card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: -1px;
     }
 </style>
