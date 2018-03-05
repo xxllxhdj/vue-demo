@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import LeftSide from '../test/views/LeftSide';
-    import CenterContent from '../test/views/CenterContent';
+    import LeftSide from '../test/layouts/LeftSide';
+    import CenterContent from '../test/layouts/CenterContent';
 
     export default {
         name: 'test',
