@@ -4,6 +4,7 @@
             <router-link to="/">Vue测试</router-link>
         </div>
         <div class="content">
+            <router-link to="/test/component">组件</router-link>
             <router-link to="/test/transition">过渡</router-link>
             <router-link to="/test/directive">指令</router-link>
         </div>

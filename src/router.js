@@ -30,6 +30,10 @@ const scrollBehavior = (to, from, savedPosition) => {
 };
 
 const testRouter = [{
+    path: '/test/component',
+    name: 'component',
+    component: () => import(/* webpackChunkName: "test" */'./test/views/ComponentView.vue')
+}, {
     path: '/test/transition',
     name: 'transition',
     component: () => import(/* webpackChunkName: "test" */'./test/views/TransitionView.vue')
