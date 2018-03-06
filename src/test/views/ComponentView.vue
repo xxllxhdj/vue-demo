@@ -12,17 +12,31 @@
             <h5>{{str}}</h5>
             <custom-input v-model="str"></custom-input>
         </div>
+        <div class="test-card">
+            <h4>具名插槽</h4>
+            <simple-card>
+                <template slot="header">
+                    <h3>一级标题</h3>
+                    <h4>二级标题</h4>
+                </template>
+                <p>主要内容的一个段落。</p>
+                <p>另一个主要段落。</p>
+                <h4 slot="footer">脚注</h4>
+            </simple-card>
+        </div>
     </div>
 </template>
 
 <script>
     import ButtonCounter from '../components/ButtonCounter';
     import CustomInput from '../components/CustomInput';
+    import SimpleCard from '../components/SimpleCard';
     
     export default {
         components: {
             ButtonCounter,
-            CustomInput
+            CustomInput,
+            SimpleCard
         },
         data: function () {
             return { str: '0' }
@@ -37,7 +51,3 @@
         }
     }
 </script>
-
-<style>
-
-</style>
