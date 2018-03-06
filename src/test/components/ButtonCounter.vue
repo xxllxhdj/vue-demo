@@ -15,7 +15,7 @@
         methods: {
             countFn: function () {
                 this.count++;
-                this.$emit('increment');
+                this.$emit('increment', this.count);
             }
         }
     }
