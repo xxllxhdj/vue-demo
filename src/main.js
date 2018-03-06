@@ -3,6 +3,8 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+import directives from './test/directives'
+
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.css';
 
@@ -18,6 +20,8 @@ Vue.use(Vuetify, {
 });
 
 Vue.config.productionTip = false;
+
+Vue.use(directives);
 
 const app = new Vue({
     router,
