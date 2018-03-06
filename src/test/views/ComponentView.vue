@@ -7,20 +7,25 @@
                 v-bind:init-count="6" v-on:increment="onIncrement">
             </button-counter>
         </div>
+        <div class="test-card">
+            <h4>vmodel组件</h4>
+            <h5>{{num}}</h5>
+            <custom-input v-model="num"></custom-input>
+        </div>
     </div>
 </template>
 
 <script>
     import ButtonCounter from '../components/ButtonCounter';
+    import CustomInput from '../components/CustomInput';
     
     export default {
-        data: function () {
-            return {
-                count: 6
-            };
-        },
         components: {
-            ButtonCounter
+            ButtonCounter,
+            CustomInput
+        },
+        data: function () {
+            return { num: 0 }
         },
         methods: {
             onIncrement: function (a, b) {
