@@ -31,6 +31,8 @@
     .test-card {
         border: 1px solid #ddd;
         padding: 10px;
-        margin: -1px;
+    }
+    .test-card + .test-card {
+        margin-top: 10px;
     }
 </style>

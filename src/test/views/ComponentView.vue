@@ -9,8 +9,8 @@
         </div>
         <div class="test-card">
             <h4>vmodel组件</h4>
-            <h5>{{num}}</h5>
-            <custom-input v-model="num"></custom-input>
+            <h5>{{str}}</h5>
+            <custom-input v-model="str"></custom-input>
         </div>
     </div>
 </template>
@@ -25,7 +25,7 @@
             CustomInput
         },
         data: function () {
-            return { num: 0 }
+            return { str: '0' }
         },
         methods: {
             onIncrement: function (a, b) {
