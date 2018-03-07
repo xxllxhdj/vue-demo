@@ -41,6 +41,10 @@ const testRouter = [{
     path: '/test/directive',
     name: 'directive',
     component: () => import(/* webpackChunkName: "test" */'./test/views/DirectiveView.vue')
+}, {
+    path: '/test/state',
+    name: 'state',
+    component: () => import(/* webpackChunkName: "test" */'./test/views/StateView.vue')
 }];
 
 const vuetifyRouter = [{

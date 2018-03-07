@@ -7,6 +7,7 @@
             <router-link to="/test/component">组件</router-link>
             <router-link to="/test/transition">过渡</router-link>
             <router-link to="/test/directive">指令</router-link>
+            <router-link to="/test/state">状态管理</router-link>
         </div>
     </div>
 </template>

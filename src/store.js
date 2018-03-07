@@ -5,12 +5,26 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-
+        count: 0
+    },
+    getters: {
+        formatCount: ({ count }) => {
+            return count + '次';
+        }
     },
     mutations: {
-
+        increment(state) {
+            state.count++
+        }
     },
     actions: {
-
+        increment({ commit }) {
+            commit('increment');
+        },
+        incrementAsync({ commit }) {
+            setTimeout(() => {
+                commit('increment')
+            }, 1000);
+        }
     }
 })
