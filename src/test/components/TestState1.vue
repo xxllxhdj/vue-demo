@@ -1,15 +1,12 @@
 <template>
     <div class="test-state-1">
-        <button v-on:click="increment">{{count}}</button>
+        <button v-on:click="increment">increment</button>
         <h5>{{formatCount}}</h5>
     </div>
 </template>
 
 <script>
-    import { mapState } from 'vuex';
-    import { mapMutations } from 'vuex';
-    import { mapGetters } from 'vuex';
-    import { mapActions } from 'vuex'
+    import { mapState, mapMutations, mapGetters, mapActions } from 'vuex';
 
     export default {
         computed: {

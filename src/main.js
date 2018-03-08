@@ -23,6 +23,8 @@ Vue.config.productionTip = false;
 
 Vue.use(directives);
 
+console.log(store);
+
 const app = new Vue({
     router,
     store,
