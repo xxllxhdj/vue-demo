@@ -10,9 +10,12 @@
 
     export default {
         computed: {
-            ...mapState([
-                'count'
-            ])
+            count: function () {
+                return this.$store.state.test.count;
+            }
+            // ...mapState([
+            //     'count'
+            // ])
         },
         methods: {
             // ...mapMutations([
