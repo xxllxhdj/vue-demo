@@ -1,7 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import HomeView from './home/views/HomeView.vue';
+import test from './test';
+import vuetify from './vuetify';
+
+import HomeView from '../home/views/HomeView.vue';
 
 Vue.use(Router);
 
@@ -29,34 +32,6 @@ const scrollBehavior = (to, from, savedPosition) => {
     }
 };
 
-const testRouter = [{
-    path: '/test/component',
-    name: 'component',
-    component: () => import(/* webpackChunkName: "test" */'./test/views/ComponentView.vue')
-}, {
-    path: '/test/transition',
-    name: 'transition',
-    component: () => import(/* webpackChunkName: "test" */'./test/views/TransitionView.vue')
-}, {
-    path: '/test/directive',
-    name: 'directive',
-    component: () => import(/* webpackChunkName: "test" */'./test/views/DirectiveView.vue')
-}, {
-    path: '/test/state',
-    name: 'state',
-    component: () => import(/* webpackChunkName: "test" */'./test/views/StateView.vue')
-}];
-
-const vuetifyRouter = [{
-    path: '/vuetify/layout/grid',
-    name: 'grid',
-    component: () => import(/* webpackChunkName: "vuetify" */'./vuetify/views/GridView.vue')
-}, {
-    path: '/vuetify/layout/alignment',
-    name: 'alignment',
-    component: () => import(/* webpackChunkName: "vuetify" */'./vuetify/views/AlignmentView.vue')
-}];
-
 export default new Router({
     mode: 'history',
     scrollBehavior,
@@ -64,7 +39,7 @@ export default new Router({
         path: '/',
         name: 'home',
         component: HomeView
-    }, ...testRouter, ...vuetifyRouter, {
+    }, ...test, ...vuetify, {
         path: '*',
         redirect: '/'
     }]
