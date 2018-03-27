@@ -52,7 +52,7 @@
     export default {
         name: 'vuetify',
         data: () => ({
-            drawer: true,
+            drawer: null,
             items: [{
                 action: 'local_activity',
                 title: 'Layout',
